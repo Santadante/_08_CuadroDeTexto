@@ -24,9 +24,9 @@ namespace _08_CuadroDeTexto
             TextBlock ayuda = (TextBlock)tb.Tag; 
 
             if (e.Key == Key.F1 && ayuda.Visibility == Visibility.Hidden)
-                (tb.Tag as TextBlock).Visibility = Visibility.Visible;
+                ayuda.Visibility = Visibility.Visible;
             else if (e.Key == Key.F1)
-                (tb.Tag as TextBlock).Visibility = Visibility.Hidden;
+                ayuda.Visibility = Visibility.Hidden;
         }
 
         private void edadTextBox_KeyDown(object sender, KeyEventArgs e)
